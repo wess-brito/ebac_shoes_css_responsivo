@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+Section {
+    padding: 25px 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+header {
+    display: block;
+    padding: 25px;
+    margin-bottom: 50px;
+    color: aliceblue;
+    border-top: #98b6ff solid 10px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav li {
+    float: right;
+    display: inline;
+    margin-left: 36px;
+    position: relative;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+header, footer {
+    background-color: #0748ec;
+    padding-top: 16px;
+    color: white;
+}
+
+header nav li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 0;
+}
+
+h1 {
+    font-style: italic;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.sobre-a-loja {
+    margin-bottom: 48px;
+}
+
+.about {
+    display: flex;
+}
+
+.about h2 {
+    font-size: 1.5em;
+    border-bottom: solid #7169ff 3px;
+    padding-bottom: 22px;
+}
+
+.sobre-a-loja img {
+    max-width: 380px;
+    margin-right: 24px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+article h3 {
+    margin-bottom: 16px;
+}
+
+section strong {
+    font-size: 1.5em;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.produtos p {
+    font-size: 0.8em;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    color: rgb(169, 169, 169);
+}
+
+section h2 {
+    border-bottom: solid #7169ff 3px;
+    padding-bottom: 22px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #7169ff;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block; 
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about p {
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .products {
+        display: block; 
+        grid-template-columns: repeat(3, 32.6%); 
+        column-gap: 1%; 
+        row-gap: 5%;
+    }
+
+    .products .produtos {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about img {
+        max-width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .about div h2 {
+        margin-top: 50px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%; 
+        row-gap: 5%;
+    }
+
+    .produtos {
+        margin-bottom: 0px;
+    }
+}
